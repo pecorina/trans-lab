@@ -1,1 +1,23 @@
 /* YeyeYeee código aquí */
+/*gris:	#696969 #3e3f41
+ 
+*/
+*{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*index1*/
+#index1{
+	background-color: #3e3f41;
+}
+
+.logo h1{
+	color: white;
+	font-size: 100px;
+}
+
+.input-group{
+	width: 300px;
+	display: flex;
+	align-content: center;
+}
