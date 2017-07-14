@@ -32,6 +32,30 @@ $(document).ready(function(){
 	});
 });
 
+//index 6//
+$(document).ready(function(){
+	$("#calculo-saldo").on("click", function(){
+		var saldoFinal = $("#guardar-saldo").val();//div guardar saldo del imput
+    $.ajax({
+            url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + saldoFinal, 
+            type: 'GET',
+            datatype: 'JSON',
+            
+        })
+
+        .done(function(response){
+             //div vacio//
+        $("#resultado-saldo").append("<div>"+ response.saldoTarjeta + "</div>")
+            console.log(response.saldoTarjeta);
+        })
+
+        .fail(function(error){
+            console.log("error");
+        })
+    });
+	})
+
+
 /*hamburguesa ñami que no resulto
 $(document).ready(function(){
 	$("#open-hide").click(function(){
@@ -39,3 +63,15 @@ $(document).ready(function(){
 	});
 });
 */
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
