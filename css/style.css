@@ -52,12 +52,11 @@ h3 a{
 	height: 30px;
 }
 .btn-default{
-	font-size: 100px;
 	background-color: #E8A511;
 	width: 300px;
 	height: 50px;
 	border-radius: 0px;
-	margin-top:20px;
+	margin-top:100px;
 	color: white;
 	font-size: 20px;
 }
@@ -119,3 +118,15 @@ h3 a{
 	background-color: #DCDCDC;
 
 }
+
+/*index3*/
+ 
+#perfil{	
+	background-size: 100px;
+	border-radius: 50%;
+	border-color: white;
+	width: 100px;
+	height: 100px;
+}
+
+
