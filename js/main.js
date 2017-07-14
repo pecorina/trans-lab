@@ -70,15 +70,26 @@ $(document).ready(function(){
 	});
 });
 */
+/* echo en javascript puro, se pasa a jquery
+ 
+//Establezca el ancho de la navegación lateral a 250px y el margen izquierdo del contenido de la página a 250px
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+//Establezca el ancho de la navegación lateral a 0 y el margen izquierdo del contenido de la página a 0
+
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
+*/
+
+$('#abrirNav').click(function(){
+	$('#mySidenav').width('250px');
+});
+$('#closeNav').click(function(){
+	$('#mySidenav').width('0');
+});
