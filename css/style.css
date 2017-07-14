@@ -1,6 +1,6 @@
 /* YeyeYeee código aquí */
 /*gris:	#696969 #3e3f41
- 
+ amarillo: ;
 */
 *{
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -11,13 +11,38 @@
 	background-color: #3e3f41;
 }
 
-.logo h1{
+.logo{
 	color: white;
 	font-size: 100px;
+	font-family: 'Anton', sans-serif;
+}
+
+.form-control{
+	width: 300px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
 }
 
 .input-group{
+	
+	margin-left: 199px;
+    width: 300px;
+}
+
+
+
+#botoncito{
+	color: white;
+	background-color: #F4A728;
 	width: 300px;
-	display: flex;
-	align-content: center;
+	height: 50px;
+}
+
+h3{
+	color: white;
+}
+
+h3 a{
+	color: #F4A728;
 }
