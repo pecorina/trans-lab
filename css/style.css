@@ -1,6 +1,6 @@
 /* YeyeYeee código aquí */
 /*gris:	#696969 #3e3f41
- amarillo: ;
+ amarillo:#E8A511; ;
 */
 *{
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -129,4 +129,12 @@ h3 a{
 	height: 100px;
 }
 
+#navbarin{
+    background-color: #3e3f41
+
+}
+
+.foto{
+	background-color: #E8A511;
+}
 
