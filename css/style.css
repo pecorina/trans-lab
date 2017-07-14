@@ -46,14 +46,23 @@ h3 a{
 
 /*index 2////////*/
 
-.btn-default{
-	color: #F4A728;
-}
 .navbarin{
 	background-color: #3e3f41;
 	width: 100%;
 	height: 30px;
 }
+.btn-default{
+	font-size: 100px;
+	background-color: #E8A511;
+	width: 300px;
+	height: 50px;
+	border-radius: 0px;
+	margin-top:20px;
+	color: white;
+	font-size: 20px;
+}
+
+
 
 /*----------menu desplegable wey--*/
 .menu{
