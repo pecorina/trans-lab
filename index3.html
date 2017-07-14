@@ -3,19 +3,88 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Perfil</title>
+	<!--meta-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--fonts google-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://use.fontawesome.com/d1388a0a18.js"></script>
+<!--bootstrap-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
-<section class="foto">
-    <div class="container">
+<div id="indexdos">
+	<nav class="vavbar navbar-inverse navbar-static-top">
+	    <div class="container">
+	     	<div class="navbar-header">
+	     		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#desplega">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="col-ms-12 col-xs-12 text-center">
+                    <div class="trans">
+			            <h3 class="translab">TRANS-LAB</h3>
+		            </div>
+                </div>	
+	     	</div>
+	     	<!--MENU DESPLEGABLE-->
+             <div id="desplega" class="navbar-collapse collapse">
+                <ul id="menu" class="nav navbar-nav navbar-right">
+                	<li><a href=""><i class="fa fa-usd" aria-hidden="true"></i>
+                	Ver saldo</a></li>
+                	<li><a href="">
+                	<i class="fa fa-th" aria-hidden="true"></i>Calcular Tarifa</a></li>
+                	<li><a href="index3.html">
+                	<i class="fa fa-user" aria-hidden="true"></i>Perfil</a></li>
+                	<li><a href="">
+                	<i class="fa fa-list-ul" aria-hidden="true"></i>Preguntas frecuentes</a></li>
+                	<li><a href="">
+                	<i class="fa fa-arrow-right" aria-hidden="true"></i>Home</a></li>
+                </ul>
+            </div>
         <div class="row">
-        	<div class="hidden-lg hidden-md col-sm-12 col-xs-12 text-center">
-        		<img src="img/perfild.png" class="img-circle" id="perfil" >
+        	<div class="col-sm-12 col-xs-12 text-center">
+        		<img src="img/perfild.png" class="img-circle" >
         	</div>
         </div>
-    	<input type="text" name="">
+	    </div>
+	</nav>
+</div>
+<section class="perfil">
+    <div class="container" id="perfile">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 text-center">
+        	    <input type="text" name="" placeholder="email@ñaws.cl">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-sm-12 col-xs-12 text-center">
+        	    <input type="text" name="" placeholder="Numero de Tarjeta">
+            </div>
+        </div>
+        <div class="row">
+   	        <div class="col-sm-12 col-xs-12 text-center">
+		        <button class="btn-default">AGREGAR TARJETA</button>
+	        </div>
+        </div>
+    	
     </div>	
 
 </section>
 	
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -32,9 +32,10 @@ $(document).ready(function(){
 	});
 });
 
-/*hamburguesa ñami */
+/*hamburguesa ñami que no resulto
 $(document).ready(function(){
 	$("#open-hide").click(function(){
 		$(this).toggleClass("show");
 	});
 });
+*/
