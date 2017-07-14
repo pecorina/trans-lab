@@ -6,9 +6,9 @@
 $(document).ready(function(){
 	/*validar email y clave*/
 	$("#botoncito").click(function(e){
-/*f(x)isEmail*/
+
 		function mailito(email) {
-/*regrex*/var run = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          var run = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
  		 return run.test(email);
 		};
 
@@ -34,18 +34,20 @@ $(document).ready(function(){
 
 //index 6//
 $(document).ready(function(){
-	$("#calculo-saldo").on("click", function(){
-		var saldoFinal = $("#guardar-saldo").val();//div guardar saldo del imput
+	$("#verSaldo").on("click", function(){
+		// una vez echo click busca//
+		var saldoFinal = $("#numer").val();//div guardar saldo del imput
     $.ajax({
             url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + saldoFinal, 
-            type: 'GET',
-            datatype: 'JSON',
+            //busca el numero de la trajeta ingreesada
+            type: 'GET',//GET TRAE EL ID DEL NUMERO DE TARJETA
+            datatype: 'JSON',//FORMATO/CHORIZILLO DE LOS DATOS DE LOS NUMEROS DE TARJETAS BIPS
             
         })
-
-        .done(function(response){
+      
+        .done(function(response){//RESPUESTA RESPONSE
              //div vacio//
-        $("#resultado-saldo").append("<div>"+ response.saldoTarjeta + "</div>")
+        $("#solito").append("<div>"+ response.saldoTarjeta + "</div>")
             console.log(response.saldoTarjeta);
         })
 
@@ -53,7 +55,12 @@ $(document).ready(function(){
             console.log("error");
         })
     });
-	})
+})
+
+
+
+
+
 
 
 /*hamburguesa ñami que no resulto
